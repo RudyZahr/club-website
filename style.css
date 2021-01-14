@@ -1,0 +1,113 @@
+html {
+    background-color: salmon;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header style */
+
+nav {
+    background-color: teal;
+    padding-top: 1rem;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    color: salmon;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    color: darksalmon;
+    padding: 2rem 0;
+    margin-top: 10rem;
+    margin-bottom: 13rem;
+}
+
+/* Intro style */
+
+h3.intro {
+    color:yellow;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+p.intro {
+    color: seashell;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Containers style */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container img {
+    height: 300px;
+    width: 400px;
+}
+
+/* Quote style */
+
+.quote {
+    background-color: teal;
+    height: 20rem;
+    color: yellow;
+}
+
+.quote h2 {
+    padding-top: 3rem;
+    font-size: 3rem;
+}
+
+.quote p {
+    font-size: 1.5rem;
+}
+
+/* End style */
+
+.end {
+    text-align: center;
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+.end img {
+    height: 45rem;
+    width: 35rem;
+    margin: 0 auto;
+}
+
+/* Footer style */
+
+nav {
+    background-color: teal;
+    padding-top: 1rem;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    color: salmon;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    font-size: 1.3rem;
+}
