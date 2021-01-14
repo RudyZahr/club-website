@@ -21,8 +21,8 @@ li {
     color: salmon;
     padding: 0.5rem 1.5rem;
     margin-right: 1.5rem;
-    display: inline-block;
     font-size: 1.3rem;
+    display: block;
 }
 
 h1 {
@@ -50,17 +50,25 @@ p.intro {
 
 /* Containers style */
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 100px;
+@media only screen and (min-width: 1000px){
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .container img {
+        height: 300px;
+        width: 30%;
+    }
+
+    li {
+        display: inline-block;
+    }
 }
 
-.container img {
-    height: 300px;
-    width: 400px;
-}
 
 /* Quote style */
 
@@ -68,6 +76,7 @@ p.intro {
     background-color: teal;
     height: 20rem;
     color: yellow;
+    padding-left: 1rem;
 }
 
 .quote h2 {
@@ -93,21 +102,31 @@ p.intro {
     margin: 0 auto;
 }
 
-/* Footer style */
 
-nav {
-    background-color: teal;
-    padding-top: 1rem;
-}
-ul {
-    list-style: none;
-    margin: 0;
+/* Tablet queries */
+
+@media only screen and (min-width: 450px) and (max-width: 999px){
+
+    .container img {
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .quote {
+        padding-bottom: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    li {
+        display: inline-block;
+    }
+
 }
 
-li {
-    color: salmon;
-    padding: 0.5rem 1.5rem;
-    margin-right: 1.5rem;
-    display: inline-block;
-    font-size: 1.3rem;
+@media only screen and (max-width: 600px){
+    li {
+        text-align: center;
+        display: block;
+    }
 }
